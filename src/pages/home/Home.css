@@ -1,0 +1,74 @@
+/* Para Cell */
+.main-banner {
+    background-image: url(../../assets/images/peliculas-2.png);
+    padding: 2rem 1.5rem;
+    padding-bottom: 0.5rem;
+    /* height: 300px; */
+}
+
+h1 {
+    padding-top: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+h1,h2{
+    text-shadow: 3px 5px 3px var(--primary-color-900);
+}
+
+.main-banner .input {
+    width: 95%;
+    height: 3.25rem;
+    line-height: 3.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: var(--h4-font-size);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0 0 0 16px;
+}
+
+.input:focus-visible{
+        outline: none;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+/* Para desktop */
+@media screen and (min-width: 1024px) {
+    .main-banner {
+        padding: 2rem 20.5rem;
+        height: 300px;
+        padding-bottom: 2rem;
+    }
+
+    h1{
+        padding-top: 2rem;
+    }
+
+    .main-banner .input-search{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .main-banner .input{
+        width: 100%;
+    }
+
+    .search{
+        display: inline-flex;
+        position: absolute;
+        top: 0;
+        right: -16px;
+        padding-top: 0;
+    }
+
+    .button-icon{
+        margin: 0px !important;
+    }
+
+}

@@ -88,6 +88,7 @@
 
   /* Otros */
   --border-radius: 0.5rem;
+  --border-radius-input: 2rem;
   --box-shadow: 0 2px 2px rgba(36, 47, 66, 0.1);
 }
 

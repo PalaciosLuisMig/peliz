@@ -18,8 +18,8 @@ export function Header() {
 
                 {/* <!-- Menu de navegacion --> */}
                 <span id="open-menu-button" className="jam jam-menu" ></span>
-                <nav id="main-menu" class="main-menu" >
-                <span id="close-menu-button" class="jam jam-close" > </span>
+                <nav id="main-menu" className="main-menu" >
+                <span id="close-menu-button" className="jam jam-close" > </span>
                 <ul id="ul-menu" >
                     <li>
                         <ItemMenu href="http://localhost:3000" jam="jam-home" text="Inicio"></ItemMenu>
