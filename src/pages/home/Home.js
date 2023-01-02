@@ -1,22 +1,21 @@
 import React from 'react';
 import './Home.css'
 import { ButtonIcon } from "../../components/Button/Button";
-import { GetPopularMovies } from "../../services/ApiTheMovieDatabase";
+import { PopularMovies } from "../../components/PopularMovies/PopularMovies";
+
 
 export const Home = () => {
 
-    const response = GetPopularMovies();
-    console.log("HOME response:" + response)
-    console.log(response)
+    console.log('Iniciando Home');
 
     return(
         <>
         {/* Banner */}
         <section className="main-banner">
-            <h1>
+            <h1 className='title-main-banner text-shadow'>
                 Bienvenido.
             </h1>
-            <h2>
+            <h2 className='title-main-banner text-shadow'>
                 Millones de películas, programas de televisión y personas por descubrir. Explora ahora.
             </h2>
             <div className='input-search'>
@@ -30,13 +29,9 @@ export const Home = () => {
         <section>
             <div className='content-wrapper'>
                 <div className='container'>
-                    <h3>
-                        Películas Populares
-                    </h3>
+                <PopularMovies></PopularMovies>
                 </div>
-                <p>
-                    {response} 
-                </p>
+                <hr></hr>
             </div>
         </section>
         </>

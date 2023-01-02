@@ -1,26 +1,22 @@
 import { useState, useEffect } from "react";
 
-export const useFetch = (url) => {
+export const useFetch = (url) =>{
+    const [movies, setMovies] = useState([]);
+    const [isFetching, setIsFetching] = useState(true);
 
-    console.log('Ingreso al useFetch con la URL: ' + url);
+    
+    useEffect(() => {
+        fetch(url)
+        .then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            setMovies(data)
+        })
+        .finally(() =>{
+            setIsFetching(false);
+        })
+    }, [url]); 
 
-    const[fetchResponse, setFetchResponse] = useState('...');
-
-    useEffect(()=>{
-        const fetchRequets = async () =>{
-
-            console.log('Realizando el requets...');
-            
-            let resquest = await fetch(url);
-            let data = await resquest.json();
-            setFetchResponse(data.results[0].original_title);
-        }
-
-        fetchRequets();
-
-    }, [url]);
-
-    console.log(fetchResponse);
-
-    return fetchResponse;
+    return {movies,isFetching}
 }
