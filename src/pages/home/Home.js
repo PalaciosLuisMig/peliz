@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css'
 import { ButtonIcon } from "../../components/Button/Button";
 import { PopularMovies } from "../../components/PopularMovies/PopularMovies";
+import { PopularKidsMovies } from "../../components/PopularKidsMovies/PopularKidsMovies";
 
 
 export const Home = () => {
@@ -26,12 +27,22 @@ export const Home = () => {
             </div>
         </section>
 
+        {/* Popular Movies */}
         <section>
             <div className='content-wrapper'>
                 <div className='container'>
                 <PopularMovies></PopularMovies>
                 </div>
                 <hr></hr>
+            </div>
+        </section>
+
+        {/* Popular kids movies */}
+        <section>
+            <div className='content-wrapper'>
+                <div className='container'>
+                <PopularKidsMovies></PopularKidsMovies>
+                </div>
             </div>
         </section>
         </>

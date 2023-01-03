@@ -1,4 +1,4 @@
-.popularMovies {
+.popularKidsMovies {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -12,15 +12,15 @@
     gap: 1rem;
 }
 
-.popularMovies::-webkit-scrollbar{
+.popularKidsMovies::-webkit-scrollbar {
     width: 2px;
 }
 
-.popularMovies::-webkit-scrollbar-thumb{
+.popularKidsMovies::-webkit-scrollbar-thumb {
     background-color: var(--second-color-500);
     border-radius: 10px;
 }
 
-.popularMovies::-webkit-scrollbar-thumb:hover{
+.popularKidsMovies::-webkit-scrollbar-thumb:hover {
     background-color: var(--second-color-700);
 }

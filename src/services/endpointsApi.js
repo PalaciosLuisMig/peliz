@@ -8,3 +8,10 @@ export const getPopularMoviesURL = () => {
     return url;
 }
 
+
+export const getPopularKidsMoviesURL = () =>{
+    
+    const url = `${APIURL}discover/movie?certification_country=US&certification.lte=G&sort_by=popularity.desc&api_key=${APIKEY}`
+
+    return url;
+}

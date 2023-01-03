@@ -41,6 +41,17 @@
     padding-top: 1.5rem;
 }
 
+/*  Variables de tamaño en tables  */
+@media screen and (min-width: 640px) {
+
+    .main-banner {
+        padding: 2rem 10rem;
+        height: 300px;
+        padding-bottom: 2rem;
+    }
+
+}
+
 /* Para desktop */
 @media screen and (min-width: 1024px) {
     .main-banner {
