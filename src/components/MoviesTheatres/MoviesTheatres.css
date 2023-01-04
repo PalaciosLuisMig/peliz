@@ -1,0 +1,26 @@
+.moviesTheatres {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: var(--max-width);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transition: height .5s linear;
+    min-height: 0;
+    height: auto;
+    gap: 1rem;
+}
+
+.moviesTheatres::-webkit-scrollbar {
+    width: 2px;
+}
+
+.moviesTheatres::-webkit-scrollbar-thumb {
+    background-color: var(--second-color-500);
+    border-radius: 10px;
+}
+
+.moviesTheatres::-webkit-scrollbar-thumb:hover {
+    background-color: var(--second-color-700);
+}

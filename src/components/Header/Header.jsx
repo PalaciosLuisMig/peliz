@@ -22,19 +22,19 @@ export function Header() {
                 <span id="close-menu-button" className="jam jam-close" > </span>
                 <ul id="ul-menu" >
                     <li>
-                        <ItemMenu href="http://localhost:3000" jam="jam-home" text="Inicio"></ItemMenu>
+                        <ItemMenu href="/" jam="jam-home" text="Inicio"></ItemMenu>
                     </li>
                     <li>
-                        <ItemMenu href="http://localhost:3000" jam="jam-movie" text="Películas"></ItemMenu>
+                        <ItemMenu href="/movie" jam="jam-movie" text="Películas"></ItemMenu>
                     </li>
                     <li>
-                        <ItemMenu href="http://localhost:3000" jam="jam-camera-alt" text="Programas de televisión"></ItemMenu>
+                        <ItemMenu href="/tv" jam="jam-camera-alt" text="Programas de televisión"></ItemMenu>
                     </li>
                     <li> 
-                        <ItemMenu href="http://localhost:3000" jam="jam-folder-open" text="Géneros"></ItemMenu>
+                        <ItemMenu href="/genders" jam="jam-folder-open" text="Géneros"></ItemMenu>
                     </li>
                     <li>
-                        <ItemMenu href="http://localhost:3000" jam="jam-flashlight-on" text="Tendencias"></ItemMenu>
+                        <ItemMenu href="/trends" jam="jam-flashlight-on" text="Tendencias"></ItemMenu>
                     </li>
                 </ul>
                 </nav>

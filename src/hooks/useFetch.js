@@ -18,5 +18,7 @@ export const useFetch = (url) =>{
         })
     }, [url]); 
 
+    // console.log("Ingresa a useFetch")
+
     return {movies,isFetching}
 }

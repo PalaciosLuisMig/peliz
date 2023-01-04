@@ -1,13 +1,14 @@
 
+import { Link } from 'react-router-dom';
 import './Button.css';
 
 
 export const Button = (props) => {
 
     return(
-        <a className='button' href={props.href}>
+        <Link className='button' to={props.href}>
             {props.text}
-        </a>
+        </Link>
     );
 };
 
@@ -16,18 +17,18 @@ export const ButtonIcon = (props) => {
     let iconJam = 'jam ' + props.jam;
 
     return(
-        <a className='button-icon' href={props.href}>
+        <Link className='button-icon' to={props.href}>
             <span className={iconJam} ></span>
             {props.text}
-        </a>
+        </Link>
     )
 }
 
 export const ButtonGhost = (props) => {
 
     return(
-        <a className='button ghost' href={props.href}>
+        <Link className='button ghost' to={props.href}>
             {props.text}
-        </a>
+        </Link>
     )
 }

@@ -10,7 +10,7 @@ export const Error404 = () =>{
             </p>
             <img className='error404-img' src={imgError404} alt="Imagen de un ovni con error 404">
             </img>
-            <ButtonIcon href="http://localhost:3000" text="Regresar" jam="jam-rocket" ></ButtonIcon>
+            <ButtonIcon href="/" text="Regresar" jam="jam-rocket" ></ButtonIcon>
         </div>
     );
 };

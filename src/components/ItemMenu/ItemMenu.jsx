@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './ItemMenu.css';
 
 export const ItemMenu = (props) =>{
@@ -6,10 +7,12 @@ export const ItemMenu = (props) =>{
 
     return(
 
-        <a href={props.href}>
-            <span className={iconJam}></span>
+        <NavLink to={props.href} style={({isActive}) =>{
+            return {color:isActive?'var(--primary-color)':''}
+        }}>
+            <span className={iconJam} ></span>
             {props.text}
-        </a>
+        </NavLink>
 
     );
 

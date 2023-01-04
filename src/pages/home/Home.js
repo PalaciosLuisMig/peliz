@@ -1,8 +1,9 @@
-import React from 'react';
 import './Home.css'
-import { ButtonIcon } from "../../components/Button/Button";
+import { Banner} from "../../components/Banner/Banner";
 import { PopularMovies } from "../../components/PopularMovies/PopularMovies";
 import { PopularKidsMovies } from "../../components/PopularKidsMovies/PopularKidsMovies";
+import { MoviesTheatres } from "../../components/MoviesTheatres/MoviesTheatres";
+
 
 
 export const Home = () => {
@@ -13,35 +14,32 @@ export const Home = () => {
         <>
         {/* Banner */}
         <section className="main-banner">
-            <h1 className='title-main-banner text-shadow'>
-                Bienvenido.
-            </h1>
-            <h2 className='title-main-banner text-shadow'>
-                Millones de películas, programas de televisión y personas por descubrir. Explora ahora.
-            </h2>
-            <div className='input-search'>
-                <input className="input" placeholder='Buscar películas, programas de televisión ... '></input>
-                <div className='search'>
-                    <ButtonIcon text="Buscar" jam="jam-search" ></ButtonIcon>
-                </div>                
-            </div>
+            <Banner></Banner>
         </section>
 
         {/* Popular Movies */}
-        <section>
+        <section className='section'>
             <div className='content-wrapper'>
                 <div className='container'>
                 <PopularMovies></PopularMovies>
                 </div>
-                <hr></hr>
             </div>
         </section>
 
         {/* Popular kids movies */}
-        <section>
+        <section className='section'>
             <div className='content-wrapper'>
                 <div className='container'>
                 <PopularKidsMovies></PopularKidsMovies>
+                </div>
+            </div>
+        </section>
+
+        {/* Movies */}
+        <section className='section'>
+            <div className='content-wrapper'>
+                <div className='container'>
+                <MoviesTheatres></MoviesTheatres>
                 </div>
             </div>
         </section>
