@@ -33,11 +33,12 @@ export const Search = () =>{
                             className="input-search-pages" type="text" placeholder="Buscar películas, programas de televisión ..."></input>
                         </div>
                     </div>
-                    {isFetching ? (<>
-                        <img src={loading} alt="Cargando..."></img>
-                    </>)
+                    {isFetching ? (
+                        <div className="img-loading">
+                            <img  src={loading} alt="Cargando..."></img>
+                        </div>
+                    )
                     :(<>
-                        
                         {searchInput === "" ?
                         (<>
                             {/* Popular Movies */}
@@ -54,13 +55,12 @@ export const Search = () =>{
                             ) : (
                                 <div className="pages-search">
                                     
-
-                                            {(movies.results).length == 0? (
-                                                <p className="not-results-search">No hay películas que coincidan con tu consulta 😞.</p>
-                                            )
-                                            :(<>
-                                            <div className="pages-search-result">
-                                        <div>
+                                    {(movies.results).length == 0? (
+                                        <p className="not-results-search">No hay películas que coincidan con tu consulta 😞.</p>
+                                    )
+                                    :(<>
+                                        <div className="pages-search-result">
+                                            <div>
                                                 {movies.results.map(elemet=>{
                                                     let mov = searchAdapters(elemet);
                                                     return (
@@ -71,18 +71,14 @@ export const Search = () =>{
                                                     );
                                                 })}
                                             </div>
-                                        
-                                    </div>
-                                            </>)
-                                            }
-
-                                        
+                                        </div>
+                                    </>)
+                                    }
                                 </div>
                             )}
                         </>)
                         }
                     </>)}
-
                 </div>
             </div>
         </>
