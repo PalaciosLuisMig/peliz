@@ -7,18 +7,11 @@ export const useFetch = (url) =>{
     
     useEffect(() => {
         fetch(url)
-        .then((response) => {
-            return response.json()
-        })
-        .then((data) => {
-            setMovies(data)
-        })
-        .finally(() =>{
-            setIsFetching(false);
-        })
+        .then((response) => response.json())
+        .then((data) => setMovies(data))
+        .catch((error) => console.log(error))
+        .finally(() => setIsFetching(false))
     }, [url]); 
-
-    // console.log("Ingresa a useFetch")
 
     return {movies,isFetching}
 }

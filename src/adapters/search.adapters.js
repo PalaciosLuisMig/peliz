@@ -1,6 +1,6 @@
 
 import { convertToDateEnUs } from "../utilities/convertToDateEnUs";
-import  noimgmovie  from '../assets/images/no-img-movie.jpg';
+import  noimgmovie  from '../assets/images/no-img-movie-detail.jpg';
 
 export const searchAdapters = (searchResults) => {
     

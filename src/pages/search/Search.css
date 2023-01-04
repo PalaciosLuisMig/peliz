@@ -94,3 +94,9 @@
         padding: 0 1.5rem;
     }
 }
+
+.not-results-search{
+    font-size: var(--h4-font-size);
+    text-align: center;
+    color: var(--red-color-500);
+}
