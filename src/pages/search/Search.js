@@ -55,7 +55,7 @@ export const Search = () =>{
                             ) : (
                                 <div className="pages-search">
                                     
-                                    {(movies.results).length == 0? (
+                                    {(movies.results).length === 0? (
                                         <p className="not-results-search">No hay películas que coincidan con tu consulta 😞.</p>
                                     )
                                     :(<>
