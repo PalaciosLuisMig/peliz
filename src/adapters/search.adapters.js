@@ -5,7 +5,6 @@ import  noimgmovie  from '../assets/images/no-img-movie-detail.jpg';
 export const searchAdapters = (searchResults) => {
     
     let customSearch = []; 
-    // let posterPath = `https://image.tmdb.org/t/p/w185_and_h278_bestv2${searchResults.poster_path}` ;
 
     let posterPath = `https://image.tmdb.org/t/p/w94_and_h141_bestv2${searchResults.poster_path}` ;
 

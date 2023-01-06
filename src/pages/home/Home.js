@@ -8,8 +8,6 @@ import { MoviesTheatres } from "../../components/MoviesTheatres/MoviesTheatres";
 
 export const Home = () => {
 
-    console.log('Iniciando Home');
-
     return(
         <>
         {/* Banner */}

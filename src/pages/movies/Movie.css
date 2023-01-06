@@ -1,0 +1,14 @@
+
+
+@media screen and (min-width: 1024px) {
+    .results-movie-pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 75%;
+    }
+    .content-movie-pages {
+        display: flex;
+        justify-content: center;
+    }
+}

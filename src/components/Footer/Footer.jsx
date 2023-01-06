@@ -17,13 +17,13 @@ export function Footer() {
                 <span className="jam-footer jam jam-movie"></span>
                 <ul>
                 <li>
-                    <a href="http://localhost:3000">Populares</a>
+                    <a href="/movie">Populares</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000">Proximanente</a>
+                    <a href="/">Proximanente</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000">En cartelera hoy</a>
+                    <a href="/">En cartelera hoy</a>
                 </li>
                 </ul>
             </div>
@@ -35,13 +35,13 @@ export function Footer() {
                 <span className="jam-footer jam jam-camera-alt"></span>
                 <ul>
                 <li>
-                    <a href="http://localhost:3000" > Popular</a>
+                    <a href="/tv" > Popular</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000" >Se Emite Hoy</a>
+                    <a href="/" >Se Emite Hoy</a>
                 </li>
                 <li>
-                    <a href="http://localhost:3000" >Mejores Valorados</a>
+                    <a href="/" >Mejores Valorados</a>
                 </li>
                 </ul>
             </div>
@@ -57,13 +57,13 @@ export function Footer() {
                     </p>
                 </li>
                 <li>
-                    <a className="redes-sociales" href="http://localhost:3000" target="_blank" title="Facebook" rel="noreferrer">
+                    <a className="redes-sociales" href="/" target="_blank" title="Facebook" rel="noreferrer">
                     <img src={facebook} alt="" />
                     </a>
-                    <a className="redes-sociales" href="http://localhost:3000" target="_blank" title="Instagram" rel="noreferrer">
+                    <a className="redes-sociales" href="/" target="_blank" title="Instagram" rel="noreferrer">
                     <img src={instagram} alt="" />
                     </a>
-                    <a className="redes-sociales" href="http://localhost:3000" target="_blank" title="Whatsapp" rel="noreferrer">
+                    <a className="redes-sociales" href="/" target="_blank" title="Whatsapp" rel="noreferrer">
                     <img src={whatsapp} alt="" />
                     </a>
                 </li>

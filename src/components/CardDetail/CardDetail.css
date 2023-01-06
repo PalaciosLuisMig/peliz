@@ -92,3 +92,7 @@
         font-size: 0.80rem;
     }
 }
+
+a{
+    color: var(--grey-color-500);
+}

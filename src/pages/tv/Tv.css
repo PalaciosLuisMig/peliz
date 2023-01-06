@@ -1,0 +1,13 @@
+@media screen and (min-width: 1024px) {
+    .results-tv-pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 75%;
+    }
+
+    .content-tv-pages {
+        display: flex;
+        justify-content: center;
+    }
+}

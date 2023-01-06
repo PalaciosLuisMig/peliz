@@ -1,19 +1,20 @@
 import { useState } from "react";
 import { useParams } from "react-router";
+
 import { useFetch } from "../../hooks/useFetch";
 
 import { getsearchURL } from "../../services/endpointsApi";
+
 import { searchAdapters } from "../../adapters/search.adapters";
 
 import { CardDetail } from "../../components/CardDetail/CardDetail";
 import { PopularMovies } from "../../components/PopularMovies/PopularMovies";
+
 import loading  from "../../assets/gifs/loading.gif";
 
 import './Search.css'
 
 export const Search = () =>{
-
-    console.log("Iniciando Search")
     
     const {value} = useParams();
 
@@ -25,12 +26,12 @@ export const Search = () =>{
         <>
             <div className="content-wrapper">
                 <div className="container">
-                    <h2 className="search-title">Busca lo que desees...</h2>
+                    <h1 className="title-page">Busca las películas que desees...</h1>
                     <div className="pages-search-input">
                         <div className="pages-search-input-item">
                             <span className="jam jam-search"></span>
                             <input defaultValue={searchInput} onChange={(e) => setSearchInput(e.target.value)}
-                            className="input-search-pages" type="text" placeholder="Buscar películas, programas de televisión ..."></input>
+                            className="input-search-pages" type="text" placeholder="Escribe la película a buscar..."></input>
                         </div>
                     </div>
                     {isFetching ? (
@@ -39,7 +40,7 @@ export const Search = () =>{
                         </div>
                     )
                     :(<>
-                        {searchInput === "" ?
+                        {searchInput === "" || value === searchInput ?
                         (<>
                             {/* Popular Movies */}
                             <section className='section'>
@@ -64,7 +65,7 @@ export const Search = () =>{
                                                 {movies.results.map(elemet=>{
                                                     let mov = searchAdapters(elemet);
                                                     return (
-                                                        <CardDetail key={mov.id} title={mov.title} releaseDate={mov.releaseDate} 
+                                                        <CardDetail key={mov.id} id={mov.id} type="movie" title={mov.title} releaseDate={mov.releaseDate} 
                                                         posterPath={mov.posterPath} voteAverage={mov.voteAverage} 
                                                         overview={mov.overview}> 
                                                         </CardDetail>
