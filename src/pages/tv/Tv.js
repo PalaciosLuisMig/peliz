@@ -1,11 +1,13 @@
 
 import { useFetch } from "../../hooks/useFetch";
+import { usePage } from "../../hooks/usePage"
 
 import { getTv} from "../../services/endpointsApi";
 
 import { tvAdapters } from "../../adapters/tv.adapters";
 
 import { CardDetail } from "../../components/CardDetail/CardDetail";
+import { ButtonIcon } from "../../components/Button/Button"
 
 import loading  from "../../assets/gifs/loading.gif";
 
@@ -14,10 +16,9 @@ import './Tv.css'
 
 export const Tv = () => {
 
-    const page = 1 //lLamar a la primera page
-    const {movies, isFetching} = useFetch(getTv(page));
+    const {page, increasePage,decrementPage} = usePage("");
 
-    console.log("Cargo Tv.js")
+    const {movies, isFetching} = useFetch(getTv(page));
 
     return(
         <div className="content-wrapper">
@@ -27,7 +28,17 @@ export const Tv = () => {
                     <div className="img-loading">
                         <img  src={loading} alt="Cargando..."></img>
                     </div>
-                ):(
+                ):(<>
+                    
+                    <div className="action-list">
+                        <span onClick={decrementPage}>
+                            <ButtonIcon text="" jam="jam-arrow-square-left"></ButtonIcon>
+                        </span>
+                        <span className="action-list-page"> Página {page}</span>
+                        <span onClick={increasePage}>
+                            <ButtonIcon text="" jam="jam-arrow-square-right"></ButtonIcon>
+                        </span>
+                    </div>
                     <div className="content-tv-pages">
                         <div className="results-tv-pages">
                             {movies.results.map(elemet=>{
@@ -41,6 +52,7 @@ export const Tv = () => {
                             })}
                         </div>
                     </div>
+                </>
                 )}
             </div>
         </div>

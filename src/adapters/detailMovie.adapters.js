@@ -27,8 +27,6 @@ export const detailMovieAdapters = (movieResults) => {
     customDetailMovie.voteAverage = movieResults.vote_average;
 
     if (movieResults.videos && movieResults.videos.results) {
-
-        console.log(movieResults.videos.results);
         const trailer = movieResults.videos.results.find((element) => element.type === "Trailer");
         customDetailMovie.trailer =  trailer ? trailer : movieResults.videos.results[0];
     }

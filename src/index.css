@@ -246,3 +246,19 @@ h4 {
 .title-page{
   text-align: center;
 }
+
+.action-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.action-list-page{
+  font-size: var(--big-font-size);
+  margin: 0 1.5rem;
+}
+
+.action-list .jam{
+  margin-right: 0;
+}
