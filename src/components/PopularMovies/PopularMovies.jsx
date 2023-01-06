@@ -19,7 +19,7 @@ export const PopularMovies = () => {
             </h2>
             <div className="popularMovies">
                 {movies.results.map(elemet=>{
-                    let mov = popularMoviesAdapters(elemet);
+                    let mov =  popularMoviesAdapters(elemet);
                     return (
                         <Card key={mov.id} id={mov.id} type="movie" title={mov.title} releaseDate={mov.releaseDate} 
                         posterPath={mov.posterPath} voteAverage={mov.voteAverage}> </Card>

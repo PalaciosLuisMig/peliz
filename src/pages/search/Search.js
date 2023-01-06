@@ -40,7 +40,7 @@ export const Search = () =>{
                         </div>
                     )
                     :(<>
-                        {searchInput === "" || value === searchInput ?
+                        {searchInput === "" || searchInput === undefined ?
                         (<>
                             {/* Popular Movies */}
                             <section className='section'>

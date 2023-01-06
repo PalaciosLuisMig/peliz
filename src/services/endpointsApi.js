@@ -49,7 +49,7 @@ export const getTv = (page) =>{
 
 export const getMovieDetail = (idMovie) =>{
 
-    const url = `${APIURL}movie/${idMovie}?language=es&api_key=${APIKEY}`;
+    const url = `${APIURL}movie/${idMovie}?append_to_response=videos&language=es&api_key=${APIKEY}`;
     
     return url;
 }

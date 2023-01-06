@@ -17,6 +17,8 @@ export const Tv = () => {
     const page = 1 //lLamar a la primera page
     const {movies, isFetching} = useFetch(getTv(page));
 
+    console.log("Cargo Tv.js")
+
     return(
         <div className="content-wrapper">
             <div className="container">

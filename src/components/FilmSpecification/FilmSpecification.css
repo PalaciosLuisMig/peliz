@@ -4,11 +4,6 @@
     padding: 1rem;
 }
 
-.poster-film{
-    display: flex;
-    justify-content: center;
-}
-
 .poster-film .img-film{
     border-radius: var(--border-radius);
 }
@@ -70,3 +65,26 @@
     }
 }
 
+.reproductor {
+    width: 100%;
+    height: 600px;
+}
+
+.trailer{
+    margin-bottom: 2rem;
+}
+
+.trailer-title{
+    font-size: var(--big-font-size);
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*  Variables de tamaño en desktop  */
+@media screen and (min-width: 1024px) {
+    .trailer-title {
+        text-align: center;
+    }
+}
