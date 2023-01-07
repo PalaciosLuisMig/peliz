@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 import './FilmSpecification.css'
 
 export const FilmSpecification = ({title,budget,genres,originalTitle,overview
-    ,posterPath,releaseDate,runtime,tagline,voteAverage,trailer}) => {
+    ,posterPath,releaseDate,runtime,tagline,voteAverage,trailer,type}) => {
     
     let altImg = "Imagen de " + title.toString();
     let classVoteAverage = "card-search-vote-average-1";
@@ -32,7 +32,7 @@ export const FilmSpecification = ({title,budget,genres,originalTitle,overview
                     </div>
                 </div>
             </div>
-            {trailer ? (
+            {trailer? (
                 <div className='trailer'>
                     <p className='trailer-title'>🎞️ Trailer </p>
                     <YouTube
@@ -56,7 +56,12 @@ export const FilmSpecification = ({title,budget,genres,originalTitle,overview
                 </div>
             ) : (
                 <>
-                <p className='trailer-title'>🎞️ Sin Trailer </p>
+                {type === "movie" ? 
+                (
+                    <p className='trailer-title'>🎞️ Sin Trailer </p>
+                )
+                :(<></>)
+                }
                 </>
             )}
         </>

@@ -2,22 +2,23 @@ import { getMoviesTheatresURL } from "../../services/endpointsApi";
 import { useFetch } from "../../hooks/useFetch";
 import { moviesTheatresAdapters } from "../../adapters/moviesTheatres.adapters";
 import { Card } from "../../components/Card/Card";
-
+import loading  from "../../assets/gifs/loading.gif";
 import './MoviesTheatres.css'
 
 export const MoviesTheatres = () => {
 
     const {movies, isFetching} = useFetch(getMoviesTheatresURL());
 
-
-    if(isFetching) return(<p> ...loading </p>)
-
-
     return (
         <div>
             <h2>
-                Peliculas en Cines (Últimos 7 días)
+                Peliculas en Cines (Últimos días)
             </h2>
+            {isFetching ? (
+                <div className="img-loading">
+                    <img  src={loading} alt="Cargando..."></img>
+                </div>
+            ):(
             <div className="moviesTheatres">
                 {movies.results.map(elemet=>{
                     let mov = moviesTheatresAdapters(elemet);
@@ -27,7 +28,7 @@ export const MoviesTheatres = () => {
                     );
                 })}
             </div>
-            
+            )}
         </div>
     );
 }

@@ -18,7 +18,7 @@ export const detailMovieAdapters = (movieResults) => {
     customDetailMovie.budget = movieResults.tagline === "" ? "Sin información": "$ " + formatNumberES(movieResults.budget)
     customDetailMovie.genres = movieResults.genres === undefined ? "" : movieResults.genres.map((item) => ` ${item.name} `).toString();
     customDetailMovie.originalTitle = movieResults.original_title;
-    customDetailMovie.overview = movieResults.overview;
+    customDetailMovie.overview = movieResults.overview === "" ? "Sin información" : movieResults.overview;
     customDetailMovie.posterPath = posterPath;
     customDetailMovie.releaseDate =  convertToDateEnUs(movieResults.release_date) ;
     customDetailMovie.runtime = formatRuntime(movieResults.runtime);

@@ -34,7 +34,7 @@ export const DetailMovie = () => {
                             <FilmSpecification key={mov.id} title={mov.title} originalTitle={mov.originalTitle} 
                             releaseDate={mov.releaseDate} posterPath={mov.posterPath} voteAverage={mov.voteAverage} 
                             overview={mov.overview} genres={mov.genres} runtime={mov.runtime}
-                            tagline={mov.tagline} budget={mov.budget} trailer={mov.trailer}> 
+                            tagline={mov.tagline} budget={mov.budget} trailer={mov.trailer} type="movie"> 
                             </FilmSpecification>
                         </div>
                     </div>
