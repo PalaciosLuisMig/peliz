@@ -43,7 +43,7 @@ export const FilmSpecification = ({title,budget,genres,originalTitle,overview
                             height: "100%",
                             playerVars: {
                             autoplay: 0,
-                            controls: 0,
+                            controls: 1,
                             cc_load_policy: 0,
                             fs: 0,
                             iv_load_policy: 0,

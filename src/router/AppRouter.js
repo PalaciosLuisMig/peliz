@@ -25,7 +25,7 @@ export const AppRouter = () => {
                 <Route path = "/tv/:id" element = {<DetailTv/>}/>
                 <Route path = "/search/" element = {<Search/>}/>
                 <Route path = "/search/:value" element = {<Search/>}/>
-                <Route path="*" element = {<Error404/>}/>
+                <Route path = "*" element = {<Error404/>}/>
             </Routes>
             <Footer></Footer> 
         </div>

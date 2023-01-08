@@ -1,25 +1,25 @@
-import { getPopularMoviesURL } from "../../services/endpointsApi";
+import { getMovieDetailRecommendations } from "../../services/endpointsApi";
 import { useFetch } from "../../hooks/useFetch";
 import { popularMoviesAdapters } from "../../adapters/popularMovies.adapters";
 import { Card } from "../../components/Card/Card";
 import loading  from "../../assets/gifs/loading.gif";
-import './PopularMovies.css'
+import './Recommendations.css'
 
-export const PopularMovies = () => {
+export const Recommendations = ({id}) => {
 
-    const {movies, isFetching} = useFetch(getPopularMoviesURL());
+    const {movies, isFetching} = useFetch(getMovieDetailRecommendations(id));
 
     return (
         <div>
             <h2>
-                Películas Populares
+                Más titulos similares a este
             </h2>
             {isFetching ? (
                 <div className="img-loading">
                     <img  src={loading} alt="Cargando..."></img>
                 </div>
             ):(
-                <div className="popularMovies">
+                <div className="popularMovies recommendation">
                     {movies.results.map(elemet=>{
                         let mov =  popularMoviesAdapters(elemet);
                         return (

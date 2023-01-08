@@ -2,11 +2,12 @@
 import { useParams } from "react-router";
 import { useFetch } from "../../hooks/useFetch";
 
-import { getMovieDetail } from "../../services/endpointsApi";
+import { getMovieDetail} from "../../services/endpointsApi";
 
 import { detailMovieAdapters } from "../../adapters/detailMovie.adapters";
 
 import { FilmSpecification } from "../../components/FilmSpecification/FilmSpecification";
+import { Recommendations } from "../../components/Recommendations/Recommendations";
 
 import loading  from "../../assets/gifs/loading.gif";
 
@@ -36,9 +37,13 @@ export const DetailMovie = () => {
                             overview={mov.overview} genres={mov.genres} runtime={mov.runtime}
                             tagline={mov.tagline} budget={mov.budget} trailer={mov.trailer} type="movie"> 
                             </FilmSpecification>
+                            
+                            {/* Recomendaciones en base a la películas seleccionada */}
+                            <Recommendations id={mov.id}></Recommendations>
                         </div>
                     </div>
                 )}
+
             </div>
         </div>
     );

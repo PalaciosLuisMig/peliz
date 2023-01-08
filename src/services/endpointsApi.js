@@ -54,6 +54,13 @@ export const getMovieDetail = (idMovie) =>{
     return url;
 }
 
+export const getMovieDetailRecommendations = (idMovie) => {
+    
+    const url = `${APIURL}movie/${idMovie}/recommendations?language=es&api_key=${APIKEY}`;
+    
+    return url;
+}
+
 export const getTvDetail = (idTv) => {
     
     const url = `${APIURL}tv/${idTv}?language=es&api_key=${APIKEY}`;
