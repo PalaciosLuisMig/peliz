@@ -4,9 +4,11 @@ export const convertToDateEnUs = (date) => {
     if (date === "") {
         return "La fecha no esta fue encontrada"
     }else{
-        var convertDate = new Date(date);
+        let convertDate = new Date(date);
         const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
-        return convertDate.toLocaleDateString('en-us', options);
+        let result = convertDate.toLocaleDateString('es-ES', options)
+        
+        return result[0].toUpperCase() + result.substring(1);
     }
     
 } 

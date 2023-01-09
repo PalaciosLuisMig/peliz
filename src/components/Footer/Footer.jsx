@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import whatsapp from '../../assets/icones/whatsapp.svg';
 import instagram from '../../assets/icones/instagram.svg';
 import facebook from '../../assets/icones/facebook.svg';
@@ -17,13 +19,13 @@ export function Footer() {
                 <span className="jam-footer jam jam-movie"></span>
                 <ul>
                 <li>
-                    <a href="/movie">Populares</a>
+                    <Link to="/movie">Populares</Link>
                 </li>
                 <li>
-                    <a href="/">Proximanente</a>
+                    <Link to="/">Proximanente</Link>
                 </li>
                 <li>
-                    <a href="/">En cartelera hoy</a>
+                    <Link to="/">En cartelera hoy</Link>
                 </li>
                 </ul>
             </div>
@@ -35,13 +37,13 @@ export function Footer() {
                 <span className="jam-footer jam jam-camera-alt"></span>
                 <ul>
                 <li>
-                    <a href="/tv" > Popular</a>
+                    <Link to="/tv" > Popular</Link>
                 </li>
                 <li>
-                    <a href="/" >Se Emite Hoy</a>
+                    <Link to="/" >Se Emite Hoy</Link>
                 </li>
                 <li>
-                    <a href="/" >Mejores Valorados</a>
+                    <Link to="/" >Mejores Valorados</Link>
                 </li>
                 </ul>
             </div>

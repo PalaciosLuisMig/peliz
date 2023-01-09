@@ -52,6 +52,15 @@ export const Tv = () => {
                             })}
                         </div>
                     </div>
+                    <div className="action-list">
+                        <span onClick={decrementPage}>
+                            <ButtonIcon text="" jam="jam-arrow-square-left"></ButtonIcon>
+                        </span>
+                        <span className="action-list-page"> Página {page}</span>
+                        <span onClick={increasePage}>
+                            <ButtonIcon text="" jam="jam-arrow-square-right"></ButtonIcon>
+                        </span>
+                    </div>
                 </>
                 )}
             </div>

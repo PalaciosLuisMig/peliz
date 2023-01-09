@@ -1,9 +1,8 @@
-/* Para Cell */
+/* Para Mobile */
 .main-banner {
     background-image: url(../../assets/images/peliculas-1.png);
     padding: 2rem 1.5rem;
     padding-bottom: 0.5rem;
-    /* height: 300px; */
 }
 
 .container{
@@ -15,15 +14,13 @@
 }
 
 
-/*  Variables de tamaño en tables  */
+/*  Para tablets  */
 @media screen and (min-width: 640px) {
-
     .main-banner {
         padding: 2rem 10rem;
         height: 300px;
         padding-bottom: 2rem;
     }
-
 }
 
 /* Para desktop */
@@ -37,5 +34,4 @@
     h1{
         padding-top: 2rem;
     }
-
 }

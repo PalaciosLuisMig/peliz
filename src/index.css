@@ -50,11 +50,9 @@
   --white-color: #ffffff;
   --color: var(--primary-color);
   --color-alt: var(--primary-color-alt);
-  --bg-rgradient: linear-gradient(214.31deg, #1192EE 11.34%, #000046 92.99%);
 
   /*  Fuentes  */
   --body-font: 'Open Sans', sans-serif;
-  /* --title-font : 'Proxima Nova Rg', sans-serif; */
   --title-font: 'Days One', sans-serif, 'Orbitron', ;
 
   /*  Tamaños  */
@@ -222,6 +220,7 @@ h4 {
   color: var(--red-color-500)
 }
 
+/* Para mobile */
 .content-wrapper {
   width: calc(100% - 2rem);
   max-width: var(--max-width);
@@ -229,6 +228,7 @@ h4 {
   margin-right: 1rem;
 }
 
+/* Para desktop */
 @media screen and (min-width: 1024px) {
   .content-wrapper {
     width: 100%;
