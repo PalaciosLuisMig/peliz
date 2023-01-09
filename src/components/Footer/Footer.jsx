@@ -59,15 +59,15 @@ export function Footer() {
                     </p>
                 </li>
                 <li>
-                    <a className="redes-sociales" href="/" target="_blank" title="Facebook" rel="noreferrer">
+                    <Link className="redes-sociales" to="/" title="Facebook" rel="noreferrer">
                     <img src={facebook} alt="" />
-                    </a>
-                    <a className="redes-sociales" href="/" target="_blank" title="Instagram" rel="noreferrer">
+                    </Link>
+                    <Link className="redes-sociales" to="/" title="Instagram" rel="noreferrer">
                     <img src={instagram} alt="" />
-                    </a>
-                    <a className="redes-sociales" href="/" target="_blank" title="Whatsapp" rel="noreferrer">
+                    </Link>
+                    <Link className="redes-sociales" to="/" title="Whatsapp" rel="noreferrer">
                     <img src={whatsapp} alt="" />
-                    </a>
+                    </Link>
                 </li>
                 </ul>
             </div>

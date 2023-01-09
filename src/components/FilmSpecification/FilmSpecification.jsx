@@ -58,7 +58,7 @@ export const FilmSpecification = ({title,budget,genres,originalTitle,overview
                 <>
                 {type === "movie" ? 
                 (
-                    <p className='trailer-title'>🎞️ Sin Trailer </p>
+                    <p className='trailer-title'>🎞️ Sin Trailer por el momento </p>
                 )
                 :(<></>)
                 }
