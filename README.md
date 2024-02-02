@@ -25,7 +25,7 @@ Es objetivo era realizar un **Front-end** de una aplicación web aplicando lo es
 React porque tiene una curva de aprendizaje muy rápida y permite crear componentes para ser reutilizados en las páginas ahorrando tiempo y esfuerzo.
 
 
-> 🧑‍🚀 **Ahora esta así**
+> 🧑‍🚀 **Ahora esta así y se llama [PELIZ](https://peliz.netlify.app) por PELÍCULA & FELIZ** 
 
 ![just-the-basics](https://media.licdn.com/dms/image/D4E22AQH5Apx0CgXc7A/feedshare-shrink_1280/0/1706843163117?e=1709769600&v=beta&t=5_DCoklwMWTzz5rsNqSyRiJ12FE_ezQpUxPX2IAxod8)
 ![just-the-basics](https://media.licdn.com/dms/image/D4E22AQFj-0FzpXJ6Sw/feedshare-shrink_1280/0/1706843158927?e=1709769600&v=beta&t=-zhKlylmWEs5Lsxv-VBTmsm9UUs97zS16O_k1jbpYAE)
