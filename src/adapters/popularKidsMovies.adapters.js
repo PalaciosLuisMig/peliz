@@ -5,7 +5,7 @@ import  noimgmovie  from '../assets/images/no-img-movie.jpg';
 export const popularKidsMoviesAdapters = (popularKidsMovies) => {
     
     let customKidsMoviePopular = []; 
-    let posterPath = `https://image.tmdb.org/t/p/w185_and_h278_bestv2${popularKidsMovies.poster_path}`;
+    let posterPath = `https://image.tmdb.org/t/p/w185${popularKidsMovies.poster_path}`;
 
     if(popularKidsMovies.poster_path == null) posterPath = noimgmovie;
 

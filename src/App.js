@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 //Mis componentes
 
 import { AppRouter } from "./router/AppRouter";

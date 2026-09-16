@@ -4,7 +4,7 @@ import  noimgmovie  from '../assets/images/no-img-movie.jpg';
 export const popularMoviesAdapters = (popularMovies) => {
     
     let customMoviePopular = []; 
-    let posterPath = `https://image.tmdb.org/t/p/w185_and_h278_bestv2${popularMovies.poster_path}`;
+    let posterPath = `https://image.tmdb.org/t/p/w185${popularMovies.poster_path}`;
 
     if(popularMovies.poster_path == null) posterPath = noimgmovie;
 

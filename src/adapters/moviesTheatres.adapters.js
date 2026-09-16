@@ -5,7 +5,7 @@ import  noimgmovie  from '../assets/images/no-img-movie.jpg';
 export const moviesTheatresAdapters = (moviesTheatres) => {
     
     let customMoviesTheatres = []; 
-    let posterPath = `https://image.tmdb.org/t/p/w185_and_h278_bestv2${moviesTheatres.poster_path}` ;
+    let posterPath = `https://image.tmdb.org/t/p/w185${moviesTheatres.poster_path}` ;
 
     if(moviesTheatres.poster_path == null) posterPath = noimgmovie;
     
